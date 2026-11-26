@@ -27,17 +27,6 @@
 # META   }
 # META }
 
-# CELL ********************
-
-pass
-
-# METADATA ********************
-
-# META {
-# META   "language": "python",
-# META   "language_group": "synapse_pyspark"
-# META }
-
 # MARKDOWN ********************
 
 # # **Superstore Sales Forecasting dengan SARIMAX di Microsoft Fabrics**
@@ -117,6 +106,7 @@ from sklearn.metrics import (
 
 from datetime import datetime
 from zoneinfo import ZoneInfo
+import re
 
 # Menonaktifkan pesan peringatan agar tampilan notebook lebih rapi dan fokus
 warnings.filterwarnings("ignore")
@@ -1016,10 +1006,12 @@ combined_df = pd.concat(
 
 spark_combined_df = spark.createDataFrame(combined_df)
 
+table_name = "sales_actual_forecast_" + re.sub(r"[^0-9A-Za-z_]", "_", TIMESTAMP)
+
 spark_combined_df.write \
     .mode("overwrite") \
     .option("overwriteSchema", "true") \
-    .saveAsTable("sales_actual_forecast")
+    .saveAsTable(table_name)
 
 # METADATA ********************
 
