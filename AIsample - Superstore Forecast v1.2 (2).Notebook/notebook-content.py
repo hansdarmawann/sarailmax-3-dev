@@ -27,17 +27,6 @@
 # META   }
 # META }
 
-# CELL ********************
-
-pass
-
-# METADATA ********************
-
-# META {
-# META   "language": "python",
-# META   "language_group": "synapse_pyspark"
-# META }
-
 # MARKDOWN ********************
 
 # # **Superstore Sales Forecasting dengan SARIMAX di Microsoft Fabrics**

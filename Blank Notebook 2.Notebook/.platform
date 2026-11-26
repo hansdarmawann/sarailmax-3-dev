@@ -1,12 +1,11 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
   "metadata": {
-    "type": "MLExperiment",
-    "displayName": "aisample-superstore-forecast-2-20261126-102717",
-    "description": ""
+    "type": "Notebook",
+    "displayName": "Blank Notebook 2"
   },
   "config": {
     "version": "2.0",
-    "logicalId": "9bcaa6be-91b7-acbd-494e-b57d092d4eb9"
+    "logicalId": "db4710d3-d75e-8f02-46b0-07df77072364"
   }
 }
