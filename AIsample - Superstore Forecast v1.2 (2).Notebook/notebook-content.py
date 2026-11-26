@@ -1097,3 +1097,14 @@ spark_combined_df.write \
 # ### Konklusi
 # Proyek ini berhasil membuktikan bahwa pendekatan data-driven menggunakan model **SARIMAX** dapat memberikan proyeksi penjualan yang stabil dan dapat dipertanggungjawabkan secara statistik. Dengan nilai **MAPE sebesar 17,47%**, manajemen kini memiliki alat bantu yang andal untuk mengoptimalkan perencanaan stok dan strategi pengadaan bahan baku hingga tahun 2024, guna mendukung efisiensi operasional perusahaan secara keseluruhan.
 
+
+# CELL ********************
+
+pass
+
+# METADATA ********************
+
+# META {
+# META   "language": "python",
+# META   "language_group": "synapse_pyspark"
+# META }
